@@ -3,8 +3,8 @@
 let userAnswer = prompt("What is your name?");
 
 function userName() {
-    alert("Welcome " + userAnswer +". So glad you could join us today.");
-    document.write( "<p style = 'text-aglin: center; color: black;'>Welcome " + userAnswer + "!</p>"); 
+    alert("Welcome " + userAnswer + ". So glad you could join us today.");
+    document.write("<p style = 'text-aglin: center; color: black;'>Welcome " + userAnswer + "!</p>");
 }
 
 
@@ -27,7 +27,7 @@ let alertSportIncorrect = "That's incorrect. Sam has played several team sports 
 let alertDriveIncorrect = "That is incorrect. Sam learned to drive on a manual";
 let alertReadIncorrect = "Alas, Sam does mostly read Sci-Fi. He enjoys others but that is his mainstream";
 let alertIncorrecttotal = [alertWhereIncorrect, alertAgeIncorrect, alertSportIncorrect, alertDriveIncorrect, alertReadIncorrect];
-let grandArray = [questionTotal, alertCorrecttotal,alertIncorrecttotal]
+let grandArray = [questionTotal, alertCorrecttotal, alertIncorrecttotal]
 
 
 
@@ -113,7 +113,7 @@ function knowSam() {
     //         console.log(colorAnswer + "" + samsColor[1])
     //         alert (' Try Again Test');
     //         break;
-            
+
     //     }
 
     //     guess++;
@@ -124,11 +124,11 @@ function knowSam() {
     // alert("The correct answers was purple, orange, and blue");
     let guess = 0;
     let correct = true;
-    let colorSam =["Purple", "Orange"];
-    while (guess < 6 && correct){
+    let colorSam = ["Purple", "Orange"];
+    while (guess < 6 && correct) {
         let colorResponse = prompt("What are some of Sam's Favorite colors?");
-        for (let i = 0; i < colorSam.length; i++){
-            if (colorResponse.toLowerCase() == colorSam[i].toLowerCase()){
+        for (let i = 0; i < colorSam.length; i++) {
+            if (colorResponse.toLowerCase() == colorSam[i].toLowerCase()) {
                 alert("Test");
                 correct = false;
                 break;
@@ -144,4 +144,7 @@ function knowSam() {
     alert("Thank you " + userAnswer + " for getting to know me. You got " + gamePoints + " out of 7.- Sam");
 }
 
+function partnerPractice() {
+    console.log("We did it");
+}
 
