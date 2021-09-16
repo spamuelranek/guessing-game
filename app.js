@@ -6,77 +6,83 @@ function userName() {
     alert("Welcome " + userAnswer +". So glad you could join us today.");
     document.write( "<p style = 'text-aglin: center; color: black;'>Welcome " + userAnswer + "!</p>"); 
 }
+
+
+
+let questionWhere = "Does Sam live in Cleveland?";
+let questionAge = "Is Sam older than Playstation?";
+let questionSport = "Has Sam ever played a team sport?";
+let questionVehicle = "Can Sam drive a manual vehicle?";
+let questionRead = "Does sam like to read mostly Science Fiction?";
+let questionTotal = [questionWhere, questionAge, questionSport, questionVehicle, questionRead];
+let alertWhereCorrect = "That's Correct. Sam lives just outside of Seattle";
+let alertAgeCorrect = "That is correct. Sam is one year older than the Playstation Console";
+let alertSportCorrect = "That is correct. Sam has played several and his favorite is Soccer";
+let alertDriveCorrect = "That is correct. In fact his first car was a baby blue Kia Rio. It was a manual.";
+let alertReadCorrect = "That is correct. Sam is very excited about the upcoming 'Dune' movie ";
+let alertCorrecttotal = [alertWhereCorrect, alertAgeCorrect, alertSportCorrect, alertDriveCorrect, alertReadCorrect];
+let alertWhereIncorrect = "I'm sorry that is incorrect. Sam currently resides just outside of Seattle";
+let alertAgeIncorrect = "That is incorrect. Sam is one year older than the Playstiation Console";
+let alertSportIncorrect = "That's incorrect. Sam has played several team sports throughout his life";
+let alertDriveIncorrect = "That is incorrect. Sam learned to drive on a manual";
+let alertReadIncorrect = "Alas, Sam does mostly read Sci-Fi. He enjoys others but that is his mainstream";
+let alertIncorrecttotal = [alertWhereIncorrect, alertAgeIncorrect, alertSportIncorrect, alertDriveIncorrect, alertReadIncorrect];
+let grandArray = [questionTotal, alertCorrecttotal,alertIncorrecttotal]
+
+
+
 function knowSam() {
     let gamePoints = 0;
-    // let questionOne = prompt("Does Sam live in Cleveland?");
-    // let questionTwo = prompt("Is Sam older than Playstation?");
-    // let questionThree = prompt("Has Sam ever played a team sport?");
-    // let questionFour = prompt("Can Sam drive a manual vehicle?");
-    // let questionFive = prompt("Does sam like to read mostly Science Fiction?");
-    // let questionTotal = [questionOne, questionTwo, questionThree, questionFour, questionFive];
-    // let alertQuestionOnecorrect = "That's Correct. Sam lives just outside of Seattle";
-    // let alertQuestionTwocorrect = "That is correct. Sam is one year older than the Playstation Console";
-    // let alertQuestionThreecorrect = "That is correct. Sam has played several and his favorite is Soccer";
-    // let alertQuestionFourcorrect = "That is correct. In fact his first car was a baby blue Kia Rio. It was a manual.";
-    // let alertQuestionFivecorrect = "That is correct. Sam is very excited about the upcoming 'Dune' movie ";
-    // let alertCorrecttotal = [alertQuestionOnecorrect, alertQuestionTwocorrect, alertQuestionThreecorrect, alertQuestionFourcorrect, alertQuestionFivecorrect];
-    // let alertQuestionOneIncorrect = "I'm sorry that is incorrect. Sam currently resides just outside of Seattle";
-    // let alertQuestionTwoIncorrect = "That is incorrect. Sam is one year older than the Playstiation Console";
-    // let alertQuestionThreeIncorrect = "That's incorrect. Sam has played several team sports throughout his life";
-    // let alertQuestionFourIncorrect = "That is incorrect. Sam learned to drive on a manual";
-    // let alertQuestionFiveIncorrect = "Alas, Sam does mostly read Sci-Fi. He enjoys others but that is his mainstream";
-    // let alertIncorrecttotal = [alertQuestionOneIncorrect, alertQuestionTwoIncorrect, alertQuestionThreeIncorrect, alertQuestionFourIncorrect, alertQuestionFiveIncorrect];
-
-    // if(questionTotal[0].toLowerCase() == "yes"){
-    //     // console.log( "I'm sorry that is incorrect. Sam currently resides just outside of Seattle")
-    //     alert(alertIncorrecttotal[0]);
-    // } else if (questionTotal[0].toLowerCase() == "no"){
-    //     // console.log("That's Correct. Sam lives just outside of Seattle")
+    // let ansWer = prompt(questionTotal[0]);
+    // if(ansWer.toLowerCase() == "yes"){
+    // // console.log( "I'm sorry that is incorrect. Sam currently resides just outside of Seattle")
+    // alert(alertIncorrecttotal[0]);
+    // }  else if (ansWer.toLowerCase() == "no"){
+    // // console.log("That's Correct. Sam lives just outside of Seattle")
     //     alert(alertCorrecttotal[0]);
     //     gamePoints++;
     // }
-   
-
-    // if(questionTotal[1].toLowerCase() == "yes"){
+    // ansWer = prompt(questionTotal[1]);
+    // if(ansWer.toLowerCase() == "yes"){
     //     // console.log( "That is correct. Sam is one year older than the Playstation Console")
     //     alert(alertCorrecttotal[1]);
     //     gamePoints++;
-    // } else if (questionTotal[1].toLowerCase() == "no"){
+    // } else if (ansWer.toLowerCase() == "no"){
     //     // console.log("That is incorrect. Sam is one year older than the Playstiation Console")
     //     alert(alertIncorrecttotal[1]);
     // }
-    
 
-    // if(questionTotal[2].toLowerCase() == "yes"){
+    // ansWer = prompt(questionTotal[2]);
+    // if(ansWer.toLowerCase() == "yes"){
     //     // console.log( "I'm sorry that is incorrect. Sam currently resides just outside of Seattle")
     //     alert(alertIncorrecttotal[2]);
-    // } else if (questionTotal[2].toLowerCase() == "no"){
+    // } else if (ansWer.toLowerCase() == "no"){
     //     // console.log("That's Correct. Sam lives just outside of Seattle")
     //     alert(alertCorrecttotal[2]);
     //     gamePoints++;
     // }
-    
 
-    // if(questionTotal[3].toLowerCase() == "yes"){
+    // ansWer = prompt(questionTotal[3]);
+    // if(ansWer.toLowerCase() == "yes"){
     //     // console.log( "That is correct. Sam is one year older than the Playstation Console")
     //     alert(alertCorrecttotal[3]);
     //     gamePoints++;
-    // } else if (questionTotal[3].toLowerCase() == "no"){
+    // } else if (ansWer.toLowerCase() == "no"){
     //     // console.log("That is incorrect. Sam is one year older than the Playstiation Console")
     //     alert(alertIncorrecttotal[3]);
     // }
 
-
-    // if(questionTotal[4].toLowerCase() == "yes"){
+    // ansWer = prompt(questionTotal[4]);
+    // if(ansWer.toLowerCase() == "yes"){
     //     // console.log( "That is correct. Sam is one year older than the Playstation Console")
     //     alert(alertCorrecttotal[4]);
     //     gamePoints++;
-    // } else if (questionTotal[4].toLowerCase() == "no"){
+    // } else if (ansWer.toLowerCase() == "no"){
     //     // console.log("That is incorrect. Sam is one year older than the Playstiation Console")
     //     alert(alertIncorrecttotal[4]);
     // }
 
-    // for (let i=0; i<4; i++) {
+    // for (let i=0; i<3; i++) {
     //     let numberAnswer = prompt("What is Sam's favorite number?");
     //     console.log( i + '' + numberAnswer);
     //     if( numberAnswer == 72){
@@ -92,49 +98,45 @@ function knowSam() {
     //     }
     // }    
     // alert( "Thanks for playing. The correct answer was 72");
+    // // let guess = 0;
+    // let correct = true;
+    // while (guess < 6 && correct){
+    //     let colorAnswer = prompt(" What is some of Sam's favorite colors?");
+    //     let samsColor = ["purple","orange"];
+    //     for (let i = 0; i < colorAnswer.length; i++){
+    //         if (colorAnswer.toLowerCase() == samsColor[i]) {
+    //             alert("Woo that is one of them");
+    //             gamePoints++;
+    //             correct = false;
+    //             break;
+    //         }
+    //         console.log(colorAnswer + "" + samsColor[1])
+    //         alert (' Try Again Test');
+    //         break;
+            
+    //     }
+
+    //     guess++;
+    // }
+    // if (correct == true){
+    //     alert("You ran out of guesses. Sorry");
+    // }                                                                
+    // alert("The correct answers was purple, orange, and blue");
     let guess = 0;
     let correct = true;
+    let colorSam =["Purple", "Orange"];
     while (guess < 6 && correct){
-        let colorAnswer = prompt(" What is some of Sam's favorite colors?");
-        let samsColor = ["blue", "purple","orange"]
-        for (let i = 0; i < samsColor.length; i++){
-            if (colorAnswer.toLowerCase() == samsColor[i]) {
-                alert("Woo that is one of them");
-                gamePoints++;
+        let colorResponse = prompt("What are some of Sam's Favorite colors?");
+        for (let i = 0; i < colorSam.length; i++){
+            if (colorResponse.toLowerCase() == colorSam[i].toLowerCase()){
+                alert("Test");
                 correct = false;
                 break;
             }
-            else if(colorAnswer){
-                alert("Try again TEST")
-                break;
-            
-            }
+            alert("wrong test");
+            break;
         }
-
-        guess++;
     }
-    //     for(let index=0; index = samsColor.length; index++ ){
-    //         if (colorAnswer.toLowerCase() == samsColor[index]){
-    //         alert("Woo that is one of them!");
-    //         gamePoints++;
-    //         break;
-    //     }
-    // }
-    //     // if (colorAnswer.toLowerCase() == samsColor[1]){
-    //     //     alert("Woo that is one of them!");
-    //     //     gamePoints++;
-    //     //     break;
-    //     // }
-    //     // if (colorAnswer.toLowerCase() == samsColor[2]){
-    //     //     alert("Woo that is one of them!");
-    //     //     gamePoints++;
-    //     //     break;
-    //     // }
-    //     // if (colorAnswer.toLowerCase() == samsColor[0], samsColor[1], samsColor[2]){
-    //     //     alert("Try Again");
-    //     // }
-    // }
-    alert("The correct answers was purple, orange, and blue");
     console.log(gamePoints);
 
 
