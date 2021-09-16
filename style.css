@@ -1,0 +1,28 @@
+header {
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-radius: 20pt;
+    border-width: 10pt;
+    text-align: center;
+    padding: auto;
+    background-color: darkorchid;
+}
+
+figure {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+p {
+    border: 5pt solid darkcyan;
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 20pt;
+    background-color: white;
+
+}
+
+main {
+    background-color: darkorchid;
+}
+
