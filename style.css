@@ -1,28 +1,87 @@
+body {
+    background-color: darkorchid;
+}
+
 header {
-    border-color: cornflowerblue;
+    border-color: #f68e5f;
     border-style: solid;
     border-radius: 20pt;
     border-width: 10pt;
     text-align: center;
     padding: auto;
-    background-color: darkorchid;
+    background-color: #f76c5e;
+}
+
+#title{
+    text-align: center; 
+    color: black;
 }
 
 figure {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left:25%;
+    margin-right: 25%;
+}
+
+#usa{
+    padding: auto;
+    display: block;
+    margin-left: 0 auto;
+    margin-right: 0 auto; 
+}
+
+figcaption{
+    background-color: #9ac6c5;
+    border: 5pt solid #9ac6c5;
+    border-radius: 20px;
+    display: inline-block;
 }
 
 p {
-    border: 5pt solid darkcyan;
-    margin: 1.5em;
+    border: 5pt solid #a5e6ba;
+    margin: 2em;
     padding: 1em;
-    border-radius: 20pt;
-    background-color: white;
+    border-radius: 20px;
+    background-color: #9ac6c5;
+    margin-top: .5em;
+    margin-bottom: 0;
+
+
 
 }
 
 main {
     background-color: darkorchid;
+}
+
+h3 {
+    background-color: #f76c5e;
+    border: 5px solid #f68e5f;
+    border-radius: 20pt;
+    text-align: left;
+    padding: 1.33em;
+    margin: 1.5em;
+    margin-bottom: 0;
+    margin-top: .8em;
+}
+ul {
+    border: 5px solid #a5e6ba;
+    background-color: #9ac6c5;
+    border-radius: 20px;
+    margin: 2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+    padding: 1em;
+    padding-left: 1.5em;
+}
+
+ol {
+    border: 5px solid #a5e6ba;
+    background-color: #9ac6c5;
+    border-radius: 20px;
+    margin: 2em;
+    margin-top: .5em;
+    margin-bottom: 0;
+    padding: 1em;
+    padding-left: 2em;
 }
 

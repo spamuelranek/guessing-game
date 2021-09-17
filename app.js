@@ -4,7 +4,7 @@ let userAnswer = prompt("What is your name?");
 
 function userName() {
     alert("Welcome " + userAnswer + ". So glad you could join us today.");
-    document.write("<p style = 'text-aglin: center; color: black;'>Welcome " + userAnswer + "!</p>");
+    document.write('<p id="title" > "Welcome "' + userAnswer + '"!</p>"');
 }
 
 
@@ -49,7 +49,7 @@ function knowSam() {
 
 }
 function numberGuesser (){
-    for (let i=0; i<3; i++) {
+    for (let i=0; i<4; i++) {
         let numberAnswer = prompt("What is Sam's favorite number?");
         console.log( i + '' + numberAnswer);
         if( numberAnswer == 72){
