@@ -46,20 +46,20 @@ let incorrectArray =["yes","no","no","no","yes"]
 let correctArray =["no","yes","yes","yes","no",]
 let gamePoints = 0;
 
+let quest = questions();
+let aCorrect = alertCorrect ();
+let aIncorrect = alertIncorrect ();
 
+function knowSam(questArr, aCorrectArr, aIncorrectArr) {
 
-function knowSam(questions, alertCorrect, alertIncorrect) {
-    questions ();
-    alertCorrect ();
-    alertIncorrect ();
     for (let guess = 0; guess<5; guess++){
-        let ansWer = prompt(questions[guess]);
+        let ansWer = prompt(questArr[guess]);
         if(ansWer.toLowerCase() == incorrectArray[guess]){
     // console.log( "I'm sorry that is incorrect. Sam currently resides just outside of Seattle")
-        alert(alertIncorrect[guess]);
+        alert(aIncorrectArr[guess]);
     }  else if (ansWer.toLowerCase() == correctArray[guess]){
     // console.log("That's Correct. Sam lives just outside of Seattle")
-        alert(alertCorrect[guess]);
+        alert(aCorrectArr[guess]);
         gamePoints++;
     }
 }
