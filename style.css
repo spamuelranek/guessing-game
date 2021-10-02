@@ -2,6 +2,13 @@ body {
     background-color: darkorchid;
 }
 
+h1{
+    border-width: 5px;
+    border: dashed blue;
+}
+p{
+    display: inline;
+}
 header {
     border-color: #f68e5f;
     border-style: solid;
