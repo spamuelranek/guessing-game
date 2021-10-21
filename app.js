@@ -5,7 +5,7 @@ let userAnswer = prompt("What is your name?");
 function userName() {
     alert("Welcome " + userAnswer + ". So glad you could join us today.");
     // window.addEventListener('DOMContentLoaded', [function to run]);
-    document.write('<p id="title" > "Welcome "' + userAnswer + '"!</p>"');
+    document.write('<p id="title" > Welcome ' + userAnswer + '!</p>');
 }
 
 

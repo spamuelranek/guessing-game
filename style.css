@@ -9,6 +9,11 @@ h1{
 p{
     display: inline;
 }
+
+#bioPara{
+    display: block;
+}
+
 header {
     border-color: #f68e5f;
     border-style: solid;
